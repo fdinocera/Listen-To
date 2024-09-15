@@ -1,0 +1,35 @@
+F001;That is so not true;Non è affatto vero
+F002;And I'm still right;Ed ho ancora ragione
+F003;She's mad because I know today is her laundry day and that means she's wearing her old-lady underpants;È arrabbiata perché so che oggi è il suo giorno del bucato e questo significa che indossa le sue mutande da vecchia signora
+F004;I can check that for you;Posso verificarlo per te
+F005;Well, we do;Beh, lo facciamo noi
+F024;I just can't believe that you think you and Chandler know me and Rachel better than we know you;Non riesco proprio a credere che tu pensi che tu e Chandler conoscete me e Rachel meglio di quanto noi conosciamo voi
+F032;You can only eat Tic Tacs in even numbers;Puoi mangiare solo Tic Tac in numero pari
+F048;You're good;Hai ragione
+F051;These are not;Questi non lo sono
+F053;I'm so not impressed;Non sono AFFATTO impressionato
+F054;Everybody snacks when they shop;Tutti fanno uno spuntino quando fanno la spesa
+F058;How many items left in that bag?;Quanti oggetti sono rimasti in quella borsa?
+F060;Five;Cinque
+F061;Okay;Va bene
+F062;Ten bucks says we can name every item in that bag;Dieci dollari che possiamo dare un nome a ogni oggetto in quella borsa
+F064;In that bag;In quella borsa
+F067;How many guesses do you get?;Quanti tentativi hai?
+F068;Six;Sei
+F069;Challenge extended;Sfida aperta
+F073;Deal challenge accepted;Andata, scommessa accettata
+F091;Yes;Sì
+F092;Ok;Va bene
+F093;Tortilla chips;Tortilla chips
+F094;Yogurt;Yogurt
+F095;Diet Soda;Diet Soda
+F101;Orange juice;Succo d'arancia
+F103;We win;Vinciamo noi
+F105;They have another guess;Hanno un altro tentativo
+F110;Ok the last thing...;Bene l'ultima cosa...
+F117;Not for like another two weeks;Non per, tipo, altre due settimane
+F122;I got it;Ci sono
+F124;Scotch tape;nastro adesivo
+F132;How did you know she would buy Scotch tape?;Come facevi a sapere che avrebbe comprato del nastro adesivo?
+F134;Well, we used up theirs last night making scary faces;Beh, ieri sera abbiamo finito il loro per fare facce spaventose
+F139;Oh, man;E dai

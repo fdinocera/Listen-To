@@ -1,45 +1,42 @@
 <div class="container">
-    <!-- <div class="sfondo"></div> -->
+
     <img src="../../assets/img/sfondo.png" alt="sfondo" width="580px">
+
+    <div cdkDropList cdkDropListOrientation="vertical" class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let parola of parole" cdkDrag>{{parola}}</div>
+        <!-- <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod}}</div> -->
+    </div>
 
     <div class="container2">
         <div class="row g-0 mt-4 centra">
             <div class="col-9 ps-2">
-                <div class="wordsDisplay">2 words</div>
+                <div id="words" class="wordsDisplay">2 words</div>
             </div>
 
-            <div class="col-3 play" (click)="play()">            
+            <div class="col-3 play" (click)="play()">
                 <img src="../../assets/img/play.png" alt="button play">
             </div>
         </div>
 
+        <!-- <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let parola of parole" cdkDrag>{{parola}}</div>
+            <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod}}</div>
+        </div> -->
 
-        <div class="row g-0 mt-5">
-            <div class="col-3 ps-2">
-                <div class="parola">It's</div>
+
+        <!-- <div class="row g-0 mt-5" cdkDropList (cdkDropListDropped)="drop($event)"
+            [cdkDropListEnterPredicate]="alwaysTrue">
+            <div class="col-3 ps-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
             </div>
-            <div class="col-3 ps-2">
-                <div class="parola">so</div>
+            <div class="col-3 ps-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
             </div>
-            <div class="col-3 ps-2">
-                <div class="parola">not</div>
+            <div class="col-3 ps-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
             </div>
-            <div class="col-3 ps-2 pe-2">
-                <div class="parola">true</div>
-            </div>
-        </div>
-        <div class="row g-0 mt-2">
-            <div class="col-3 ps-2">
-                <div class="parola">It's</div>
-            </div>
-            <div class="col-3 ps-2">
-                <div class="parola">so</div>
-            </div>
-            <div class="col-3 ps-2">
-                <div class="parola">not</div>
-            </div>
-            <div class="col-3 ps-2 pe-2">
-                <div class="parola">true</div>
+            <div class="col-3 ps-2 pe-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
             </div>
         </div>
         <div class="row g-0 mt-2">
@@ -54,6 +51,20 @@
             </div>
             <div class="col-3 ps-2 pe-2">
                 <div class="parola">true</div>
+            </div>
+        </div>
+        <div class="row g-0 mt-2" cdkDropList (cdkDropListDropped)="drop($event)">
+            <div class="col-3 ps-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
+            </div>
+            <div class="col-3 ps-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
+            </div>
+            <div class="col-3 ps-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
+            </div>
+            <div class="col-3 ps-2 pe-2" *ngFor="let parola of parole" cdkDrag>
+                <div class="parola">{{parola}}</div>
             </div>
         </div>
         <div class="row g-0 mt-2">
@@ -140,7 +151,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="text-center mt-4">
