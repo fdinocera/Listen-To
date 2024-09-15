@@ -2,10 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { SoundService } from '../sound.service';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
+
 @Component({
     selector: 'app-splash-screen',
     templateUrl: './splash-screen.component.html',
     styleUrls: ['./splash-screen.component.css']
+
+    //standalone: true,
+    //imports: [CdkDropList, CdkDrag],
 })
 export class SplashScreenComponent implements OnInit {
 
@@ -44,19 +48,19 @@ export class SplashScreenComponent implements OnInit {
 
                 //cambia sfondo e bordo pulsanti
                 pulsante.style.backgroundColor = '#b4d16b';
-                pulsante.style.border='1px solid #a8008c'
+                pulsante.style.border = '1px solid #a8008c'
 
             } else {
                 pulsante.innerText = this.soundService.getRandomWord();
                 pulsante.style.backgroundColor = '#c56d7a';
-                pulsante.style.border=''
+                pulsante.style.border = ''
             }
         });
     }
 
     //dnd material
     //https://material.angular.io/cdk/drag-drop/overview#cdk-drag-drop-mixed-sorting    
-    
+
     //dnd material v16
     //https://v16.material.angular.io/cdk/drag-drop/overview#cdk-drag-drop-horizontal-sorting
 
@@ -68,15 +72,19 @@ export class SplashScreenComponent implements OnInit {
         'Middle ages',
         'Early modern period',
         'Long nineteenth century',
-      ];
-    
-    drop(event: CdkDragDrop<string[]>){
+    ];
+
+    drop2(event: CdkDragDrop<string[]>) {
         console.log("Drop event triggered");
         // moveItemInArray(this.timePeriods, event.previousIndex, event.currentIndex);
         moveItemInArray(this.parole, event.previousIndex, event.currentIndex);
     }
+    
+    drop(event: CdkDragDrop<string[]>) {
+        moveItemInArray(this.parole, event.previousIndex, event.currentIndex);
+    }
 
-    alwaysTrue(){
+    alwaysTrue() {
         return true;
     }
 }

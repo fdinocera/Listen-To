@@ -2,10 +2,13 @@
 
     <img src="../../assets/img/sfondo.png" alt="sfondo" width="580px">
 
-    <div cdkDropList cdkDropListOrientation="vertical" class="example-list" (cdkDropListDropped)="drop($event)">
-        <div class="example-box" *ngFor="let parola of parole" cdkDrag>{{parola}}</div>
-        <!-- <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod}}</div> -->
-    </div>
+    <div cdkDropList cdkDropListOrientation="mixed" class="example-list" (cdkDropListDropped)="drop($event)">
+        @for (item of parole; track item) {
+          <div class="example-box" cdkDrag>{{item}}</div>
+        }
+      </div>
+      
+
 
     <div class="container2">
         <div class="row g-0 mt-4 centra">
